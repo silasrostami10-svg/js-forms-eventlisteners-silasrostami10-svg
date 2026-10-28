@@ -66,7 +66,7 @@ document.getElementById("btnCalc").addEventListener("click", function() {
 
 
 // STEP 3: Get the "Calculate Total" button by ID ("btnCalc")
-//         Add a cleick event listener.
+//         Add a cleick eveent listener.
 //         Inside the listener:
 
 //   a) Get the selected size price:
