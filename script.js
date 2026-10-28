@@ -17,7 +17,11 @@
 
 // STEP 1: Get the "Shout" button by its ID ("btnShout")
 //         using document.getElementById()
-
+document.getElementById("btnShout").addEventListener("click", function() {
+    let value =document.getElementById("shoutInput").value
+    value1=value.toUpperCase()
+    document.getElementById("outShout").innerHTML=value1+"!"
+    })
 // STEP 2: Add a click event listener to the button.
 //         Inside the listener function:
 //         a) Get the text from the input with ID "shoutInput"
@@ -30,6 +34,8 @@
 //         Example: "hello" → "HELLO!"
 
 
+
+
 // ============================================
 //  MAIN: Pizza Builder
 // ============================================
@@ -39,6 +45,25 @@
 //   - Toppings (checkboxes): $0.50 each
 //   - Service (dropdown): Dine In $0, Take Out $1.50,
 //     Delivery $3.00
+
+
+document.getElementById("btnCalc").addEventListener("click", function() {
+    let radios =document.getElementsByName("rg")
+    let total=0
+    let sizecost=0
+    for (i=0, i<radios.length, i++) {
+        if (radios[i].checked){
+            sizecost=parseFloat(radios[i].value)
+        }
+    }
+    total+=sizecost
+
+    let boxes = document.getElementsByName(cb)
+    for (i=0; i<boxes.length; i++) {
+
+    }
+})
+
 
 // STEP 3: Get the "Calculate Total" button by ID ("btnCalc")
 //         Add a click event listener.
