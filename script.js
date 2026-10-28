@@ -71,7 +71,7 @@ document.getElementById("btnCalc").addEventListener("click", function() {
 
 //   a) Get the selected size price:
 //      Use document.getElementsByName("rg") to get all
-//      size radio buttons. Loop through them to find the
+//      size radio buttones. Loop through them to find the
 //      one that is .checked, and read its .value.
 //      Convert to a number with parseFloat().
 
